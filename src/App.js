@@ -7,6 +7,7 @@ import "./App.scss";
 import View from "./View";
 import Add from "./Add";
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import logo from "./logo.png";
 
 class App extends React.Component {
   constructor(props) {
@@ -63,16 +64,18 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Navbar bg="primary" expand="md">
-          <Navbar.Brand>FaceAche™</Navbar.Brand>
+             <Navbar expand="md">
+          <Navbar.Brand>
+            <img src={logo} alt="social network logo" className="Logo" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Link className="nav-link" to="/">
-                View
+                View bubbles
               </Link>
               <Link className="nav-link" to="/add">
-                Add
+                Blow a bubble
               </Link>
             </Nav>
           </Navbar.Collapse>
