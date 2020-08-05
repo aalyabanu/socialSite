@@ -34,7 +34,7 @@ class Scard extends React.Component {
             <Likes no={this.props.likes} likeaction={this.props.likeaction} postId={this.props.postId} />
             </Col>
             <Col>
-            <Loves num={this.props.loves} loveaction={this.props.loveaction} postId={this.props.postId} />
+            <Loves no={this.props.loves} loveaction={this.props.loveaction} postId={this.props.postId} />
             </Col>
             </Row>
         

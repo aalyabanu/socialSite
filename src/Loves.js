@@ -26,7 +26,7 @@ class Loves extends React.Component {
                   alt="love logo"
                 />
               </td>
-              <td>{this.props.num}</td>
+              <td>{this.props.no}</td>
             </tr>
           </tbody>
         </Table>
