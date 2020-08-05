@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Likes from './Likes';
+import Loves from './Loves';
 import { Container, Col, Row } from "react-bootstrap";
 
 class Scard extends React.Component {
@@ -29,7 +30,12 @@ class Scard extends React.Component {
             </Col>
             </Row>
             <Row>
+              <Col>
             <Likes no={this.props.likes} likeaction={this.props.likeaction} postId={this.props.postId} />
+            </Col>
+            <Col>
+            <Loves num={this.props.loves} loveaction={this.props.loveaction} postId={this.props.postId} />
+            </Col>
             </Row>
         
           
