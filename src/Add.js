@@ -57,7 +57,8 @@ class Add extends React.Component {
       id: "",
       text: "",
       img: "",
-      likes: 0
+      likes: 0,
+      loves:0
     }, console.log(this.state))
   }
 
