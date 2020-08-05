@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from 'react-bootstrap/Image'
-import Table from 'react-bootstrap/Table'
-import LikeIcon from './like.png'
+import React from "react";
+import Table from "react-bootstrap/Table";
+// npm install --save-dev @iconify/react @iconify/icons-bx
+import { Icon, InlineIcon } from "@iconify/react";
+import bxLike from "@iconify/icons-bx/bx-like";
 
 class Likes extends React.Component {
-
   clickHandler(event) {
-    console.log(this.props.postId)
+    console.log(this.props.postId);
     this.props.likeaction(this.props.postId);
   }
 
@@ -17,11 +17,16 @@ class Likes extends React.Component {
           <tbody>
             <tr>
               <td>
-                <Image onClick={() => this.clickHandler()} fluid className="mx-auto" src={LikeIcon} width="25px" alt="like logo" />
+                <Icon
+                  onClick={() => this.clickHandler()}
+                  fluid
+                  className="mx-auto"
+                  icon={bxLike}
+                  width="25px"
+                  alt="like logo"
+                />
               </td>
-              <td>
-                {this.props.no}
-              </td>
+              <td>{this.props.no}</td>
             </tr>
           </tbody>
         </Table>
