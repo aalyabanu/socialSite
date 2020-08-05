@@ -28,8 +28,8 @@ class App extends React.Component {
     this.setState({ posts: JSON.parse(listContents) || [], postId: postValue });
   }
 
-  updateListItems(postid, id, text, img, likes) {
-    const postItem = { postid, id, text, img, likes };
+  updateListItems(postid, id, text, img, likes, loves) {
+    const postItem = { postid, id, text, img, likes, loves };
     this.setState(
       (state) => ({
         posts: state.posts.concat(postItem),
@@ -82,8 +82,8 @@ class App extends React.Component {
           <Switch>
             <Route path="/add">
               <Add
-                onsubmit={(postid, id, text, img, likes) =>
-                  this.updateListItems(postid, id, text, img, likes)
+                onsubmit={(postid, id, text, img, likes, loves) =>
+                  this.updateListItems(postid, id, text, img, likes, loves)
                 }
                 lastid={this.state.postId}
               />
