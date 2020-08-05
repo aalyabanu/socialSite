@@ -83,7 +83,7 @@ class Add extends React.Component {
           </Form.Group>
 
           <Button variant="primary" type="submit">
-            Add Post
+            Add Bubble
   </Button>
         </Form>
       </>
