@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Scard from './Scard';
 
 class View extends React.Component {
@@ -17,7 +17,7 @@ class View extends React.Component {
         <div>
           {this.buildPosts()}
         </div>
-        <div id="att">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+       
       </>
     );
   }

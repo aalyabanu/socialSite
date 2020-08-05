@@ -1,0 +1,83 @@
+$background1:#00cffa;
+$background2: #FF6347;
+$background3: teal;
+$textColour: white;
+
+.bg-primary {
+  background-color:$background2;
+  color:$textColour;
+}
+
+.nav.navbar.navbar-expand-md.navbar-light{
+  background-color: $background1;
+  padding-top: 10px;
+}
+
+body {
+  background-color: $background1;
+  padding: 20px;
+  margin: 0;
+}
+
+a.nav-link:hover{
+  background-color: $background1;
+}
+img { 
+  max-height: 290px;
+  max-width: 30%; 
+  overflow: visible;
+  padding-top: 0;
+  padding-bottom: 0; 
+  border-radius: 0.9em;
+}
+
+header {
+  background-color: #fafafa;
+  height: 60px;
+}
+a.nav-link{
+  padding: 1px 40px;
+  border-right: 1px solid #eee;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin-right:10px;
+  
+}
+a.nav-link:active{
+  background-color:$background1; 
+}
+.nav-link.active {
+  background-color: #000;
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white; 
+  font-size: 20px;
+  font-family: cursive;
+  font-style:italic;
+  background-color: $background2;
+  border-radius: 0.5em;
+  align-content: right;
+  margin-top: 10px;
+  
+}
+
+div#basic-navbar-nav.navbar-collapse.collapse{
+  // align-content: right;
+}
+
+.avatar{
+  padding-top: 10px;
+  background-color: $background3;
+  
+}
+
+h5.card-header{
+  background-color: $background3;
+  color:white;
+}
+
+.Card{
+  border-radius: 0.5em;
+}
