@@ -32,7 +32,10 @@ or
 
 ## Screenshot(s)
 
+### View Bubbles
 ![bubbly](https://user-images.githubusercontent.com/40723510/102897563-1c765b80-4460-11eb-8083-b3e00662d557.png)
 
+
+### Blow a Bubble
 ![bubbly2](https://user-images.githubusercontent.com/40723510/102897605-32841c00-4460-11eb-966b-223dbd416ae5.png)
 
